@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhijeet Patil — Cloud Architect & Technology Leader</title>
+    <meta name="description" content="Senior Solutions Architect at AWS with 8 certifications, Ex-IBM Executive IT Architect. Expert in Cloud, AI/ML, and Enterprise Transformation.">
+    <meta property="og:title" content="Abhijeet Patil — Cloud Architect & Technology Leader">
+    <meta property="og:description" content="Senior Solutions Architect at AWS. Expert in Cloud Architecture, AI/ML Strategy, and Enterprise Transformation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prajwalendra.github.io">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#3b82f6',
+                        'accent-dark': '#2563eb',
+                        surface: '#f8fafc',
+                        muted: '#64748b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        display: ['Georgia', 'Times New Roman', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #1e3a5f 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .cert-badge {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border: 1px solid #bae6fd;
+        }
+        .timeline-line {
+            position: absolute;
+            left: 1.25rem;
+            top: 2.5rem;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #3b82f6, #e2e8f0);
+        }
+        nav a.active {
+            color: #3b82f6;
+        }
+        @media (max-width: 768px) {
+            .timeline-line { left: 1rem; }
+        }
+    </style>
+</head>
+<body class="bg-white text-primary antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-lg font-semibold tracking-tight text-primary">AP</a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-muted">
+                <a href="#about" class="hover:text-primary transition-colors">About</a>
+                <a href="#expertise" class="hover:text-primary transition-colors">Expertise</a>
+                <a href="#experience" class="hover:text-primary transition-colors">Experience</a>
+                <a href="#writing" class="hover:text-primary transition-colors">Writing</a>
+                <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+                <a href="#certifications" class="hover:text-primary transition-colors">Credentials</a>
+                <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-primary">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <div class="flex flex-col gap-3 text-sm font-medium text-muted">
+                <a href="#about" class="hover:text-primary">About</a>
+                <a href="#expertise" class="hover:text-primary">Expertise</a>
+                <a href="#experience" class="hover:text-primary">Experience</a>
+                <a href="#writing" class="hover:text-primary">Writing</a>
+                <a href="#projects" class="hover:text-primary">Projects</a>
+                <a href="#certifications" class="hover:text-primary">Credentials</a>
+                <a href="#contact" class="hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row items-start gap-10">
+                <div class="flex-1">
+                    <p class="text-accent font-medium text-sm tracking-wide uppercase mb-4">Cloud Architect &middot; Technology Leader &middot; AI Strategist</p>
+                    <h1 class="text-5xl md:text-6xl font-bold tracking-tight leading-tight mb-6">
+                        Abhijeet <span class="gradient-text">Patil</span>
+                    </h1>
+                    <p class="text-xl text-muted leading-relaxed max-w-2xl mb-8">
+                        Senior Solutions Architect at <strong class="text-primary">Amazon Web Services</strong> with 8 AWS certifications and 13+ years of enterprise architecture experience. I help organizations navigate cloud transformation, AI/ML adoption, and modernization at scale.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-4">
+                        <a href="https://www.linkedin.com/in/prajwalendra" target="_blank" rel="noopener"
+                           class="inline-flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/prajwalendra" target="_blank" rel="noopener"
+                           class="inline-flex items-center gap-2 border border-gray-200 text-primary px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub
+                        </a>
+                        <a href="https://medium.com/@prajwalendra" target="_blank" rel="noopener"
+                           class="inline-flex items-center gap-2 border border-gray-200 text-primary px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+                            Blog
+                        </a>
+                        <a href="mailto:prajwalendra@live.com"
+                           class="inline-flex items-center gap-2 border border-gray-200 text-primary px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-surface fade-in">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-sm font-semibold text-accent uppercase tracking-wide mb-3">About</h2>
+            <h3 class="text-3xl font-bold mb-8">Executive Summary</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-muted leading-relaxed mb-4">
+                        Seasoned Senior Solutions Architect with <strong class="text-primary">8 AWS certifications</strong>, including Solutions Architect Professional, Machine Learning Specialty, and Security Specialty. I bring a proven track record of establishing relationships with senior technical and business leaders to architect and advocate for cloud solutions at enterprise scale.
+                    </p>
+                    <p class="text-muted leading-relaxed">
+                        My career spans from building offshore delivery centers at IBM to leading cloud transformation programs for Fortune 500 clients — including Bank of America, MetLife, and Santander — to my current role driving AWS adoption and AI/ML strategy.
+                    </p>
+                </div>
+                <div>
+                    <p class="text-muted leading-relaxed mb-4">
+                        I'm currently pursuing an <strong class="text-primary">Executive MBA with a Cybersecurity focus</strong> at UNC Wilmington, reflecting my commitment to the intersection of technology leadership and security strategy.
+                    </p>
+                    <p class="text-muted leading-relaxed">
+                        Beyond my day role, I'm an active contributor to the Generative AI and Machine Learning Technical Field Community, a published thought leader on cloud, AI, and cybersecurity, and a dedicated mentor helping the next generation of cloud architects grow.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas of Expertise -->
+    <section id="expertise" class="py-20 px-6 fade-in">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-sm font-semibold text-accent uppercase tracking-wide mb-3">Expertise</h2>
+            <h3 class="text-3xl font-bold mb-10">Areas of Focus</h3>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card-hover bg-white border border-gray-100 rounded-xl p-6">
+                    <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                    </div>
+                    <h4 class="font-semibold mb-2">Cloud Architecture</h4>
+                    <p class="text-sm text-muted">AWS, Azure, IBM Cloud, Hybrid/Multi-Cloud strategies, migration, and modernization at enterprise scale.</p>
+                </div>
+                <div class="card-hover bg-white border border-gray-100 rounded-xl p-6">
+                    <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                    </div>
+                    <h4 class="font-semibold mb-2">AI / ML Strategy</h4>
+                    <p class="text-sm text-muted">Amazon Bedrock, SageMaker, Generative AI, RAG, LangChain, Agentic AI, and Vector Databases.</p>
+                </div>
+                <div class="card-hover bg-white border border-gray-100 rounded-xl p-6">
+                    <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    </div>
+                    <h4 class="font-semibold mb-2">Cybersecurity</h4>
+                    <p class="text-sm text-muted">Security architecture, compliance frameworks, AWS Security Specialty certified, EMBA Cybersecurity focus.</p>
+                </div>
+                <div class="card-hover bg-white border border-gray-100 rounded-xl p-6">
+                    <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    </div>
+                    <h4 class="font-semibold mb-2">Enterprise Transformation</h4>
+                    <p class="text-sm text-muted">Large-scale modernization programs for Fortune 500 — Bank of America, MetLife, Santander, and Financial Services.</p>
+                </div>
+                <div class="card-hover bg-white border border-gray-100 rounded-xl p-6">
+                    <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    </div>
+                    <h4 class="font-semibold mb-2">Technical Leadership</h4>
+                    <p class="text-sm text-muted">Coaching architects, building delivery centers, mentoring teams, and driving organizational capabilities.</p>
+                </div>
+                <div class="card-hover bg-white border border-gray-100 rounded-xl p-6">
+                    <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                    </div>
+                    <h4 class="font-semibold mb-2">Platform Engineering</h4>
+                    <p class="text-sm text-muted">Microservices, Kubernetes, Docker, Terraform, DevOps, and developer productivity at scale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="py-16 px-6 bg-surface fade-in">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-sm font-semibold text-accent uppercase tracking-wide mb-3">Technology</h2>
+            <h3 class="text-3xl font-bold mb-8">Technical Proficiency</h3>
+            <div class="space-y-6">
+                <div>
+                    <h4 class="text-xs font-semibold text-muted uppercase tracking-wider mb-3">Cloud Platforms</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">AWS</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">Microsoft Azure</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">IBM Cloud</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">Red Hat OpenShift</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">Kubernetes</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xs font-semibold text-muted uppercase tracking-wider mb-3">AI / Machine Learning</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">Amazon Bedrock</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">SageMaker</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">RAG</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">LangChain</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">Vector Databases</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">Agentic AI</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xs font-semibold text-muted uppercase tracking-wider mb-3">Languages & Frameworks</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">Python</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">Java</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">Spring Cloud</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">Node.js</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">TypeScript</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xs font-semibold text-muted uppercase tracking-wider mb-3">Infrastructure & DevOps</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">Microservices</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">Docker</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">Terraform</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">MCP</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">DevOps</span>
+                        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium">Agile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-20 px-6 fade-in">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-sm font-semibold text-accent uppercase tracking-wide mb-3">Career</h2>
+            <h3 class="text-3xl font-bold mb-10">Professional Experience</h3>
+            <div class="space-y-10">
+
+                <!-- AWS -->
+                <div class="relative pl-12 md:pl-14">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-0 top-1 w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                    </div>
+                    <div>
+                        <span class="text-xs font-semibold text-accent uppercase tracking-wide">2022 &mdash; Present</span>
+                        <h4 class="text-xl font-bold mt-1">Senior Solutions Architect</h4>
+                        <p class="text-muted font-medium mb-3">Amazon Web Services (AWS) &middot; Cary, NC</p>
+                        <ul class="text-sm text-muted space-y-2 leading-relaxed">
+                            <li>Establish and nurture relationships with senior technical and business leaders to advocate for AWS cloud solutions</li>
+                            <li>Lead in-depth architectural discussions, high-impact educational sessions, and author blogs/whitepapers on cloud architecture</li>
+                            <li>Execute complex sales strategies in collaboration with leadership to surpass revenue targets</li>
+                            <li>Coach and mentor fellow architects, enhancing organizational skills and contributing to high-stakes initiatives</li>
+                            <li>Active participant in the Generative AI and Machine Learning Technical Field Community</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IBM Executive -->
+                <div class="relative pl-12 md:pl-14">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-0 top-1 w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    </div>
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">2021 &mdash; 2022</span>
+                        <h4 class="text-xl font-bold mt-1">Executive IT Architect / Hybrid Cloud Leader</h4>
+                        <p class="text-muted font-medium mb-3">IBM Corporation &middot; Research Triangle Park, NC</p>
+                        <ul class="text-sm text-muted space-y-2 leading-relaxed">
+                            <li>Supported multiple Financial Services Sector clients across North America on complex Cloud Native and Hybrid Cloud Modernization programs</li>
+                            <li>Provided thought leadership for custom, container-based development environments (Kubernetes, multi-cloud)</li>
+                            <li>Accountable for Hybrid Cloud-Native Application Development architecture strategy and technology direction</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IBM Sr Consulting - Multiple Roles -->
+                <div class="relative pl-12 md:pl-14">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-0 top-1 w-10 h-10 bg-gray-500 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                    </div>
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">2018 &mdash; 2021</span>
+                        <h4 class="text-xl font-bold mt-1">Sr. Consulting IT Architect</h4>
+                        <p class="text-muted font-medium mb-3">IBM Corporation &middot; RTP, NC &amp; Boston, MA</p>
+                        <ul class="text-sm text-muted space-y-2 leading-relaxed">
+                            <li>Lead Architect in the Center of Excellence (CIO Office) for Santander US Consumer and Business Banking</li>
+                            <li>Served on Architecture Review Board chaired by the client CIO; Chief Solution Architect for Channels (Online, Mobile, ATM)</li>
+                            <li>Led Digital Platform modernization for MetLife Inc. (SaaS on Microservices) across 40+ countries</li>
+                            <li>Led the MetLife Japan Banca Paperless System Program, onboarding 36+ banks onto the sales platform</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IBM Group Manager -->
+                <div class="relative pl-12 md:pl-14">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-0 top-1 w-10 h-10 bg-gray-400 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">2016 &mdash; 2018</span>
+                        <h4 class="text-xl font-bold mt-1">Group Manager</h4>
+                        <p class="text-muted font-medium mb-3">IBM India Pvt. Ltd. &middot; Chennai, India</p>
+                        <ul class="text-sm text-muted space-y-2 leading-relaxed">
+                            <li>Built and managed cost-efficient Offshore Delivery Centers in Chennai and Bengaluru for a strategic multi-year MetLife contract</li>
+                            <li>Hired and trained technical leaders to build resource pools in Microservices, Advanced UI, DevOps, and Cloud Migration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IBM Sr. Delivery Lead -->
+                <div class="relative pl-12 md:pl-14">
+                    <div class="absolute left-0 top-1 w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">2013 &mdash; 2016</span>
+                        <h4 class="text-xl font-bold mt-1">Sr. Delivery Lead</h4>
+                        <p class="text-muted font-medium mb-3">IBM India Pvt. Ltd. &middot; Charlotte, NC</p>
+                        <ul class="text-sm text-muted space-y-2 leading-relaxed">
+                            <li>Led deliveries for multi-year platform migration efforts (Online Banking, ATM Channels) for Bank of America</li>
+                            <li>Partnered with Project Executive in submitting bids and proposals, including detailed estimation and costing</li>
+                            <li>Built trusted partnerships with client managers and business partners to grow business and pursue new deals</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Thought Leadership / Writing -->
+    <section id="writing" class="py-20 px-6 bg-surface fade-in">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-sm font-semibold text-accent uppercase tracking-wide mb-3">Thought Leadership</h2>
+            <h3 class="text-3xl font-bold mb-4">Writing & Ideas</h3>
+            <p class="text-muted mb-10 max-w-2xl">Published perspectives on cloud architecture, AI strategy, cybersecurity, leadership, and the future of technology.</p>
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <a href="https://medium.com/@prajwalendra/agentic-ai-a-vehicle-not-the-destination-5b405dc532ab" target="_blank" rel="noopener"
+                   class="card-hover bg-white border border-gray-100 rounded-xl p-6 block">
+                    <span class="text-xs font-semibold text-accent uppercase tracking-wide">AI / Technology</span>
+                    <h4 class="text-lg font-bold mt-2 mb-2">Agentic AI: A Vehicle, Not the Destination</h4>
+                    <p class="text-sm text-muted">Exploring the strategic role of agentic AI as an enabler rather than an end goal in enterprise transformation.</p>
+                    <span class="inline-block mt-4 text-sm text-accent font-medium">Read on Medium &rarr;</span>
+                </a>
+
+                <a href="https://medium.com/@prajwalendra/aws-re-invent-2025-navigating-black-swans-rethinking-investment-and-the-rise-of-the-renaissance-developer" target="_blank" rel="noopener"
+                   class="card-hover bg-white border border-gray-100 rounded-xl p-6 block">
+                    <span class="text-xs font-semibold text-accent uppercase tracking-wide">Cloud / Industry</span>
+                    <h4 class="text-lg font-bold mt-2 mb-2">AWS re:Invent 2025: Navigating Black Swans & the Rise of the Renaissance Developer</h4>
+                    <p class="text-sm text-muted">Reflections on rethinking investment strategies and the evolving role of the modern developer.</p>
+                    <span class="inline-block mt-4 text-sm text-accent font-medium">Read on Medium &rarr;</span>
+                </a>
+
+                <a href="https://medium.com/@prajwalendra/were-raising-the-last-generation-that-will-question-ai-and-they-don-t-even-know-it-5dba3752db23" target="_blank" rel="noopener"
+                   class="card-hover bg-white border border-gray-100 rounded-xl p-6 block">
+                    <span class="text-xs font-semibold text-accent uppercase tracking-wide">AI / Society</span>
+                    <h4 class="text-lg font-bold mt-2 mb-2">We're Raising the Last Generation That Will Question AI</h4>
+                    <p class="text-sm text-muted">A provocative look at how the next generation's relationship with AI will fundamentally differ from ours.</p>
+                    <span class="inline-block mt-4 text-sm text-accent font-medium">Read on Medium &rarr;</span>
+                </a>
+
+                <a href="https://medium.com/@prajwalendra/cyber-security-is-no-longer-someone-elses-problem" target="_blank" rel="noopener"
+                   class="card-hover bg-white border border-gray-100 rounded-xl p-6 block">
+                    <span class="text-xs font-semibold text-accent uppercase tracking-wide">Cybersecurity</span>
+                    <h4 class="text-lg font-bold mt-2 mb-2">Cyber Security Is No Longer Someone Else's Problem</h4>
+                    <p class="text-sm text-muted">Why cybersecurity has become everyone's responsibility in the modern enterprise.</p>
+                    <span class="inline-block mt-4 text-sm text-accent font-medium">Read on Medium &rarr;</span>
+                </a>
+
+                <a href="https://medium.com/@prajwalendra/new-year-new-mindset-leadership-lessons-from-my-holiday-binge-0fe4f8c4ce11" target="_blank" rel="noopener"
+                   class="card-hover bg-white border border-gray-100 rounded-xl p-6 block">
+                    <span class="text-xs font-semibold text-accent uppercase tracking-wide">Leadership</span>
+                    <h4 class="text-lg font-bold mt-2 mb-2">New Year, New Mindset: Leadership Lessons from My Holiday Binge</h4>
+                    <p class="text-sm text-muted">Leadership insights drawn from unexpected sources during the holiday season.</p>
+                    <span class="inline-block mt-4 text-sm text-accent font-medium">Read on Medium &rarr;</span>
+                </a>
+
+                <a href="https://medium.com/@prajwalendra/how-ai-is-revolutionizing-the-way-we-plan-and-book-travel" target="_blank" rel="noopener"
+                   class="card-hover bg-white border border-gray-100 rounded-xl p-6 block">
+                    <span class="text-xs font-semibold text-accent uppercase tracking-wide">AI / Innovation</span>
+                    <h4 class="text-lg font-bold mt-2 mb-2">How AI is Revolutionizing the Way We Plan and Book Travel</h4>
+                    <p class="text-sm text-muted">Examining the transformative impact of AI on the travel industry and customer experience.</p>
+                    <span class="inline-block mt-4 text-sm text-accent font-medium">Read on Medium &rarr;</span>
+                </a>
+
+                <a href="https://medium.com/@prajwalendra/the-observers-mirror-0c206cc481fb" target="_blank" rel="noopener"
+                   class="card-hover bg-white border border-gray-100 rounded-xl p-6 block">
+                    <span class="text-xs font-semibold text-accent uppercase tracking-wide">Philosophy</span>
+                    <h4 class="text-lg font-bold mt-2 mb-2">The Observer's Mirror</h4>
+                    <p class="text-sm text-muted">A philosophical exploration of perception, observation, and self-awareness.</p>
+                    <span class="inline-block mt-4 text-sm text-accent font-medium">Read on Medium &rarr;</span>
+                </a>
+
+                <a href="https://medium.com/@prajwalendra/matter-and-consciousness-17486e5b997c" target="_blank" rel="noopener"
+                   class="card-hover bg-white border border-gray-100 rounded-xl p-6 block">
+                    <span class="text-xs font-semibold text-accent uppercase tracking-wide">Philosophy</span>
+                    <h4 class="text-lg font-bold mt-2 mb-2">Matter and Consciousness</h4>
+                    <p class="text-sm text-muted">Reflections on the intersection of the physical and the conscious mind.</p>
+                    <span class="inline-block mt-4 text-sm text-accent font-medium">Read on Medium &rarr;</span>
+                </a>
+
+            </div>
+            <div class="mt-8 text-center">
+                <a href="https://medium.com/@prajwalendra" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-2 text-accent font-medium hover:text-accent-dark transition-colors">
+                    View all articles on Medium
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 px-6 fade-in">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-sm font-semibold text-accent uppercase tracking-wide mb-3">Open Source</h2>
+            <h3 class="text-3xl font-bold mb-4">Projects & Contributions</h3>
+            <p class="text-muted mb-10 max-w-2xl">Hands-on work in AI/ML, cloud infrastructure, and agentic systems.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <a href="https://github.com/prajwalendra/amazon-bedrock-agentcore-samples" target="_blank" rel="noopener"
+                   class="card-hover bg-white border border-gray-100 rounded-xl p-6 block">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="w-3 h-3 rounded-full bg-orange-400"></span>
+                        <span class="text-xs text-muted">Jupyter Notebook</span>
+                    </div>
+                    <h4 class="font-semibold mb-2">Amazon Bedrock Agentcore</h4>
+                    <p class="text-sm text-muted">Accelerating AI agents into production with scale, reliability, and security critical to real-world deployment.</p>
+                </a>
+
+                <a href="https://github.com/prajwalendra/amazon-sagemaker-samples" target="_blank" rel="noopener"
+                   class="card-hover bg-white border border-gray-100 rounded-xl p-6 block">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="w-3 h-3 rounded-full bg-orange-400"></span>
+                        <span class="text-xs text-muted">Jupyter Notebook</span>
+                    </div>
+                    <h4 class="font-semibold mb-2">Amazon SageMaker Samples</h4>
+                    <p class="text-sm text-muted">Machine learning workflows and model training examples using Amazon SageMaker.</p>
+                </a>
+
+                <a href="https://github.com/prajwalendra/hotel-revenue-optimization-agent" target="_blank" rel="noopener"
+                   class="card-hover bg-white border border-gray-100 rounded-xl p-6 block">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="w-3 h-3 rounded-full bg-blue-400"></span>
+                        <span class="text-xs text-muted">TypeScript</span>
+                    </div>
+                    <h4 class="font-semibold mb-2">Hotel Revenue Optimization Agent</h4>
+                    <p class="text-sm text-muted">AI-powered revenue optimization agent built with React.js and Google Gemini.</p>
+                </a>
+
+                <a href="https://github.com/prajwalendra/mcp" target="_blank" rel="noopener"
+                   class="card-hover bg-white border border-gray-100 rounded-xl p-6 block">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="w-3 h-3 rounded-full bg-green-400"></span>
+                        <span class="text-xs text-muted">Python</span>
+                    </div>
+                    <h4 class="font-semibold mb-2">AWS MCP Servers</h4>
+                    <p class="text-sm text-muted">Specialized MCP servers bringing AWS best practices directly to development workflows.</p>
+                </a>
+
+                <a href="https://github.com/prajwalendra/mcp-projects" target="_blank" rel="noopener"
+                   class="card-hover bg-white border border-gray-100 rounded-xl p-6 block">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="w-3 h-3 rounded-full bg-gray-400"></span>
+                        <span class="text-xs text-muted">Multi-language</span>
+                    </div>
+                    <h4 class="font-semibold mb-2">MCP Projects</h4>
+                    <p class="text-sm text-muted">Model Context Protocol experiments and project implementations.</p>
+                </a>
+
+                <a href="https://github.com/prajwalendra?tab=repositories" target="_blank" rel="noopener"
+                   class="card-hover bg-white border border-gray-100 rounded-xl p-6 flex items-center justify-center text-center block">
+                    <div>
+                        <svg class="w-8 h-8 text-muted mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        <p class="font-semibold text-accent">View all repositories</p>
+                        <p class="text-xs text-muted mt-1">16 public repositories on GitHub</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="py-20 px-6 bg-surface fade-in">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-sm font-semibold text-accent uppercase tracking-wide mb-3">Education</h2>
+            <h3 class="text-3xl font-bold mb-10">Academic Background</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white border border-gray-100 rounded-xl p-6">
+                    <span class="text-xs font-semibold text-accent uppercase tracking-wide">2024 &mdash; Present</span>
+                    <h4 class="text-lg font-bold mt-2 mb-1">Executive MBA</h4>
+                    <p class="text-sm text-muted font-medium">Cybersecurity Focus</p>
+                    <p class="text-sm text-muted mt-2">Cameron School of Business, UNC Wilmington</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded-xl p-6">
+                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">2006</span>
+                    <h4 class="text-lg font-bold mt-2 mb-1">PG Diploma</h4>
+                    <p class="text-sm text-muted font-medium">Advanced Computing</p>
+                    <p class="text-sm text-muted mt-2">C-DAC, India</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded-xl p-6">
+                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">2003</span>
+                    <h4 class="text-lg font-bold mt-2 mb-1">Bachelor of Engineering</h4>
+                    <p class="text-sm text-muted font-medium">Mechanical Engineering</p>
+                    <p class="text-sm text-muted mt-2">Shivaji University, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="py-20 px-6 fade-in">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-sm font-semibold text-accent uppercase tracking-wide mb-3">Credentials</h2>
+            <h3 class="text-3xl font-bold mb-10">Certifications & Recognitions</h3>
+
+            <div class="mb-10">
+                <h4 class="text-sm font-semibold text-muted uppercase tracking-wider mb-4">AWS Certifications (8)</h4>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                    <div class="cert-badge rounded-lg p-4">
+                        <p class="text-xs font-semibold text-blue-700 uppercase mb-1">Professional</p>
+                        <p class="text-sm font-medium">Solutions Architect</p>
+                    </div>
+                    <div class="cert-badge rounded-lg p-4">
+                        <p class="text-xs font-semibold text-blue-700 uppercase mb-1">Specialty</p>
+                        <p class="text-sm font-medium">Machine Learning</p>
+                    </div>
+                    <div class="cert-badge rounded-lg p-4">
+                        <p class="text-xs font-semibold text-blue-700 uppercase mb-1">Specialty</p>
+                        <p class="text-sm font-medium">Security</p>
+                    </div>
+                    <div class="cert-badge rounded-lg p-4">
+                        <p class="text-xs font-semibold text-blue-700 uppercase mb-1">Associate</p>
+                        <p class="text-sm font-medium">Solutions Architect</p>
+                    </div>
+                    <div class="cert-badge rounded-lg p-4">
+                        <p class="text-xs font-semibold text-blue-700 uppercase mb-1">Associate</p>
+                        <p class="text-sm font-medium">Developer</p>
+                    </div>
+                    <div class="cert-badge rounded-lg p-4">
+                        <p class="text-xs font-semibold text-blue-700 uppercase mb-1">Associate</p>
+                        <p class="text-sm font-medium">SysOps Administrator</p>
+                    </div>
+                    <div class="cert-badge rounded-lg p-4">
+                        <p class="text-xs font-semibold text-blue-700 uppercase mb-1">Associate</p>
+                        <p class="text-sm font-medium">ML Engineer</p>
+                    </div>
+                    <div class="cert-badge rounded-lg p-4">
+                        <p class="text-xs font-semibold text-blue-700 uppercase mb-1">Foundational</p>
+                        <p class="text-sm font-medium">AI Practitioner</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-sm font-semibold text-muted uppercase tracking-wider mb-4">Other Credentials</h4>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                        <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Microsoft</p>
+                        <p class="text-sm font-medium">Azure Architect (AZ-303)</p>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                        <p class="text-xs font-semibold text-gray-500 uppercase mb-1">IBM</p>
+                        <p class="text-sm font-medium">IBM Mentor</p>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                        <p class="text-xs font-semibold text-gray-500 uppercase mb-1">IBM</p>
+                        <p class="text-sm font-medium">Recognized Teacher / Educator</p>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                        <p class="text-xs font-semibold text-gray-500 uppercase mb-1">IBM</p>
+                        <p class="text-sm font-medium">Enterprise Design Thinking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-6 bg-primary text-white fade-in">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-sm font-semibold text-blue-300 uppercase tracking-wide mb-3">Connect</h2>
+            <h3 class="text-3xl font-bold mb-4">Let's Work Together</h3>
+            <p class="text-blue-200 mb-10 max-w-xl mx-auto">
+                Whether you're looking for cloud architecture leadership, AI/ML strategy guidance, or enterprise transformation expertise — I'd be glad to connect.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://www.linkedin.com/in/prajwalendra" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-2 bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="mailto:prajwalendra@live.com"
+                   class="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 px-6 py-3 rounded-lg font-medium hover:bg-white/20 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    prajwalendra@live.com
+                </a>
+                <a href="https://github.com/prajwalendra" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 px-6 py-3 rounded-lg font-medium hover:bg-white/20 transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub
+                </a>
+                <a href="https://medium.com/@prajwalendra" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 px-6 py-3 rounded-lg font-medium hover:bg-white/20 transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+                    Medium
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 bg-primary border-t border-gray-800">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
+            <p>&copy; 2026 Abhijeet Patil. All rights reserved.</p>
+            <p class="mt-2 md:mt-0">Cary, North Carolina</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Fade-in on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Active nav highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
