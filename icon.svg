@@ -1,0 +1,5 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="32" cy="32" r="32" fill="#111111"/>
+  <text x="32" y="38" font-size="26" font-family="Arial, Helvetica, sans-serif" font-weight="600" fill="#FFFFFF" letter-spacing="1" text-anchor="middle">AP</text>
+  <line x1="16" y1="44" x2="48" y2="44" stroke="#FF7A00" stroke-width="3"/>
+</svg>
